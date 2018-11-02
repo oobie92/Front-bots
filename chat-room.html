@@ -1,0 +1,47 @@
+<!DOCTYPE html><html class=''>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./chat-room.css">
+  </head>
+  <body>
+    <div class='container' ng-cloak ng-app="chatApp">
+      <h1>Sistemas Integrados Chat</h1>
+      <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
+        <div class='chatbox__user-list'>
+          <h1>Friends Online</h1>
+          <div class='chatbox__user--active'>
+            <p>Maelyn Pepe</p>
+          </div>
+          <div class='chatbox__user--busy'>
+            <p>Michelle Pepe</p>
+          </div>
+          <div class='chatbox__user--active'>
+            <p>Amy Angular</p>
+          </div>
+          <div class='chatbox__user--active'>
+            <p>Jack Uniden</p>
+          </div>
+          <div class='chatbox__user--away'>
+            <p>Ben Marcus</p>
+          </div>
+        </div>
+        <div class="chatbox__messages" ng-repeat="message in messages">
+          <div class="chatbox__messages__user-message">
+            <div class="chatbox__messages__user-message--ind-message">
+              <p class="name">Pedro Alvarado</p>
+              <br/>
+              <p class="message">aqui casual</p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <input type="text" placeholder="Type Message">
+        </form>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- <script src="./chat-room.js"></script> -->
+  </body>
+</html>
